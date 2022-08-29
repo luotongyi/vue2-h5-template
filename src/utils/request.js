@@ -63,7 +63,7 @@ service.interceptors.response.use(
       errorMsg = '服务器开小差了~'
     }
     // 弹框提示错误信息
-    /// TODO
+    // / TODO
 
     return Promise.reject(errorData)
   }
@@ -77,7 +77,7 @@ function configCommonHeaders(config) {
 }
 
 // function configFormDataRequest(config) {
-//   if (config.url === '/xxxx') { 
+//   if (config.url === '/xxxx') {
 //     config.processData = false
 //     config.mimeType = 'multipart/form-data'
 //     config.contentType = false

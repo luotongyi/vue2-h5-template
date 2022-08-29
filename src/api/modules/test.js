@@ -3,7 +3,6 @@ import request from '@/utils/request'
 import api from '../index'
 
 class TestApi {
-  
   testGet(params) {
     return request({
       url: api.test.testApi,

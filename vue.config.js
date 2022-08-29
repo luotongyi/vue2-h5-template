@@ -19,14 +19,14 @@ module.exports = {
   outputDir: 'dist',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
-  productionSourceMap: true, //配置sorceMap
+  productionSourceMap: true, // 配置sorceMap
   devServer: {
     port: port,
     hot: true,
     open: true,
     overlay: {
       warnings: false,
-      errors: true,
+      errors: true
     },
     proxy: {
       // change xxx-api/login => mock/login
@@ -35,10 +35,10 @@ module.exports = {
         target: 'http://xxxxx/dev-api',
         changeOrigin: true,
         pathRewrite: {
-          ['^' + process.env.VUE_APP_BASE_API]: '',
-        },
-      },
-    },
+          ['^' + process.env.VUE_APP_BASE_API]: ''
+        }
+      }
+    }
   },
   configureWebpack(config) {
     if (process.env.NODE_ENV !== 'development') {
@@ -57,8 +57,8 @@ module.exports = {
       resolve: {
         alias: {
           '@': resolve('src')
-        },
-      },
+        }
+      }
     }
   },
   chainWebpack(config) {
@@ -93,13 +93,13 @@ module.exports = {
         return options
       })
       .end()
-    
+
     // https://webpack.js.org/configuration/devtool/#development
     config
       .when(process.env.NODE_ENV === 'development',
         config => config.devtool('cheap-source-map')
       )
-    
+
     config
       .when(process.env.NODE_ENV !== 'development',
         config => {

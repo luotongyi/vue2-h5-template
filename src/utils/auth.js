@@ -1,5 +1,4 @@
 
-
 import Cookies from 'js-cookie'
 
 const TOKEN_KEY_NAME = 'Accept-Token-vue2-55-template'

@@ -13,7 +13,7 @@ export default {
       // 此操作是异步操作，可以发送请求等内容
       setTimeout(() => {
         commit('SET_TESTSTATE', val)
-      }, 50);
+      }, 50)
     }
   }
 }

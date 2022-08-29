@@ -2,7 +2,7 @@
  * 常用的接口成功、失败的提示语
  */
 
- export default {
+export default {
   errorTips: {
     CODE_400: 'xxx'
   },

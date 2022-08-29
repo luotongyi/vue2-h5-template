@@ -5,7 +5,7 @@ import JSEncrypt from 'jsencrypt'
  * @param {*} pupblicKey
  * @param {*} data
  */
- export function rsaEncrypt(pupblicKey, data) {
+export function rsaEncrypt(pupblicKey, data) {
   var jse = new JSEncrypt()
   jse.setPublicKey(pupblicKey)
   return jse.encrypt(data)

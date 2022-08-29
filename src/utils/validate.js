@@ -4,7 +4,7 @@
  * @param arg /^1[3456789]\d{9}$/
  * @returns {boolean}
  */
- export function validMobile(arg) {
+export function validMobile(arg) {
   const reg = /^1[3456789]\d{9}$/
   return reg.test(arg)
 }
@@ -24,7 +24,7 @@ export function validNumber(arg) {
  * @param {string} arg
  * @returns {Boolean}
  */
- export function validLowerCase(arg) {
+export function validLowerCase(arg) {
   const reg = /^[a-z]+$/
   return reg.test(arg)
 }
@@ -54,7 +54,7 @@ export function validAlphabets(arg) {
  * @param {string} path
  * @returns {Boolean}
  */
- export function isExternal(path) {
+export function isExternal(path) {
   return /^(https?:|mailto:|tel:)/.test(path)
 }
 
@@ -84,7 +84,7 @@ export function validEmail(email) {
  * @param arg
  * @returns {boolean}
  */
- export function validIDCard(arg) {
+export function validIDCard(arg) {
   // 加了省市区校验
   // const reg = /(^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$)|(^[1-9]\d{5}\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{2}$)/
   const reg = /^([a-zA-Z\d]{15}|[a-zA-Z\d]{18})$/

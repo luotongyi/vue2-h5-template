@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve --mode=development",
+    "build:test": "vue-cli-service build --mode=production --report",
+    "build:prod": "vue-cli-service build --mode=production",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
     "sass-loader": "^7.3.1",
     "script-ext-html-webpack-plugin": "^2.1.5",
     "svg-sprite-loader": "^6.0.11",
+    "vconsole": "^3.14.6",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

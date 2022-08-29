@@ -4,7 +4,7 @@
  * @param {*} 参数：imgUrl, link, desc, title
  */
 export function wxShareConfig(params) {
-  const { imgUrl, link, desc, title  } = params
+  const { imgUrl, link, desc, title } = params
   window.document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
     /* eslint-disable */
     WeixinJSBridge.on('menu:share:appmessage', function(){
